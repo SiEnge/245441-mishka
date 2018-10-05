@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Мишка"</title>
+    <link rel="stylesheet" href="source/css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -20,15 +21,15 @@
       <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="index.html" method="post">
-        <fieldset class="fieldset fieldset__type">
-          <legend class="fieldset__title">Тип</legend>
+        <fieldset class="form-order form-order--type">
+          <legend class="form-order__title">Тип</legend>
           <label for="product">Аксессуар для интерьера</label>
           <input type="radio" name="product" value="product-interior">
           <label for="product">Детская игрушка</label>
           <input type="radio" name="product" value="product-toys">
         </fieldset>
-        <fieldset class="fieldset fieldset__color">
-          <legend class="fieldset__title" >Цвет</legend>
+        <fieldset class="form-order form-order--color">
+          <legend class="form-order__title" >Цвет</legend>
           <label for="color">Белый</label>
           <input type="checkbox" name="color" value="color-white">
           <label for="color">Серый</label>
@@ -42,8 +43,8 @@
           <label for="color">Оранжевый</label>
           <input type="checkbox" name="color" value="color-orange">
         </fieldset>
-        <fieldset class="fieldset fieldset__name">
-          <legend class="fieldset__title">ФИО</legend>
+        <fieldset class="form-order form-order--name">
+          <legend class="form-order__title">ФИО</legend>
           <label for="">Имя:</label>
           <input type="text" name="" value="" required placeholder="Введите ваше имя*">
           <label for="">Фамилия:</label>
@@ -51,22 +52,22 @@
           <label for="">Отчество:</label>
           <input type="text" name="" value="" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="fieldset fieldset__telephone">
-          <legend class="fieldset__title">Тел</legend>
+        <fieldset class="form-order form-order--telephone">
+          <legend class="form-order__title">Тел</legend>
           <label for=""></label>
           <input type="tel" name="" value="" required placeholder="+7 XXX XXX XX XX*">
         </fieldset>
-        <fieldset class="fieldset fieldset__email">
-          <legend class="fieldset__title">e-mail</legend>
+        <fieldset class="form-order form-order--email">
+          <legend class="form-order__title">e-mail</legend>
           <label for=""></label>
           <input type="email" name="" value="" required placeholder="Ваш Email*">
         </fieldset>
-        <fieldset class="fieldset fieldset__comment">
-          <legend class="fieldset__title">Доп</legend>
+        <fieldset class="form-order form-order--comment">
+          <legend class="form-order__title">Доп</legend>
           <textarea name="name" rows="8" cols="80">Опишите все ваши пожелания к заказу</textarea>
         </fieldset>
-        <p class="fieldset__text">*Поля обязательны для заполнения</p>
-        <input class="fieldset__button" type="submit" name="" value="Отправить заказ">
+        <p class="form-order__text">*Поля обязательны для заполнения</p>
+        <input class="form-order__button" type="submit" name="" value="Отправить заказ">
       </form>
     </main>
     <footer class="page-footer">
