@@ -1,0 +1,91 @@
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: block;
+  text-align: left;
+  padding-left: 75px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border-bottom: 1px solid @grey;
+  a {
+    color: @black;
+    text-decoration: none;
+  }
+}
+
+.menu-item--hidden {
+  display: none;
+}
+
+//------------------------------------------------------------
+/////////ПЛАНШЕТ//////////////////////////////////////////
+//------------------------------------------------------------
+
+@media @tablet-width {
+  .menu {
+    position: absolute;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .menu-list__left {
+    padding-left: 34px;
+    .menu-item {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .menu-item {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    border-bottom: none;
+  }
+
+  .menu-item--search {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-left: 1px solid @grey;
+    a {
+      font-size: 0;
+    }
+  }
+
+  .menu-item--cart {
+    padding-left: 85px;
+    padding-right: 50px;
+    border-left: 1px solid @grey;
+    font-size: 17px;
+  }
+}
+
+//------------------------------------------------------------
+///////////////////////ДЕСКТОП ///////////////////////////////
+//------------------------------------------------------------
+
+
+@media @desktop-width {
+  .menu {
+    width: 500px;
+    position: static;
+  }
+
+
+
+ .menu-item--hidden {
+   display: block;
+ }
+
+
+}
