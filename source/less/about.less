@@ -1,0 +1,52 @@
+.about {
+  padding: 25px;
+  background-color: @white;
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+//------------------------------------------------------------
+/////////ПЛАНШЕТ//////////////////////////////////////////
+//------------------------------------------------------------
+
+@media @tablet-width {
+  .about {
+    padding: 50px;
+
+  }
+
+  .about__wrap {
+    display: flex;
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+
+}
+
+//------------------------------------------------------------
+///////////////////////ДЕСКТОП ///////////////////////////////
+//------------------------------------------------------------
+
+
+@media @desktop-width {
+  .about {
+    padding: 100px;
+    // text-align: center;
+
+  }
+}

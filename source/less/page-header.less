@@ -1,0 +1,238 @@
+.page-header__wrap {
+  background-color: @white;
+}
+
+.page-header__logo {
+  display: block;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid @grey;
+}
+
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
+}
+
+.page-header__ship {
+  display: none;
+}
+
+.page-header__title {
+  margin: 0;
+  padding-top: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 130px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-header__hero {
+
+  width: 100%;
+  height: 500px;
+
+  background-color: @grey-fon;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -10px;
+}
+
+.page-header__link-item {
+  display: block;
+  // min-height: 100px;
+  background-color: @turquoise;
+  color: @white;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 160px;
+}
+
+.page-header__link--toys {
+  background-color: @dark-turquoise;
+}
+
+//------------------------------------------------------------
+/////////ПЛАНШЕТ//////////////////////////////////////////
+//------------------------------------------------------------
+
+@media @tablet-width {
+  .page-header__wrap {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid @grey;
+  }
+
+  .page-header__wrap-left {
+    width: 370px;
+  }
+
+  .page-header__wrap-right {
+    position: relative;
+  }
+
+  .page-header__logo {
+    text-align: left;
+    padding-left: 50px;
+    border-bottom: none;
+  }
+
+  .page-header__logo img {
+    width: 112px;
+    height: 46px;
+  }
+
+  .page-header__ship {
+    position: absolute;
+    right: 50px;
+    display: block;
+  }
+
+  .page-header__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 158px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 370px;
+    br {
+      display: none;
+    }
+  }
+
+  .page-header__hero {
+    height: 750px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 0;
+  }
+
+  .page-header__link {
+    display: flex;
+  }
+
+  .page-header__link-item {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+//------------------------------------------------------------
+///////////////////////ДЕСКТОП ///////////////////////////////
+//------------------------------------------------------------
+
+
+@media @desktop-width {
+  .page-header__wrap-left {
+    display: flex;
+    // flex-direction: row-reverse;
+  }
+
+  .page-header__logo {
+    // order: 2;
+  }
+
+  .page-header__hero {
+    // height: 750px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    // background-position: center 0;
+
+  }
+
+  .page-header__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 364px;
+  }
+
+  .page-header__link {
+    padding-left: 100px;
+    padding-right: 100px;
+    // display: flex;
+
+  }
+  .page-header__link-item {
+    // display: flex;
+    flex-grow: 1;
+    padding-right: 350px;
+  }
+
+}
+
+// @media @mobile-widths-only {
+//
+// }
+
+
+// .page-header {
+//   display: flex;
+//   flex-direction: column;
+// }
+//
+// .page-header__item {
+//   color: @color-black;
+//   text-decoration: none;
+//   display: block;
+//   font-weight: bold;
+//   font-size: 18px;
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+//   padding-left: 75px;
+//   padding-right: 30px;
+//   border-bottom: 1px solid @color-grey;
+// }
+//
+//
+// .page-header__ship {
+//   display: none;
+//   .list-style-none;
+//   color: @color-black;
+// }
+//
+//
+//
+//
+//
+//
+// @media @mobile-widths-only {
+//   .page-header {
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+//
+//   .page-header__list {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//
+//   .page-header__wrapper {
+//     display: flex;
+//   }
+//
+//   .page-header__item {
+//     padding-left: 30px;
+//   }
+//
+//   .page-header__search {
+//     // font-size: 0;
+//   }
+//
+//   .page-header__ship {
+//     display: block;
+//   }
+//
+// }
+//
